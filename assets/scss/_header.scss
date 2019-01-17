@@ -1,0 +1,79 @@
+.networks {
+	position: absolute;
+  top: 80px;
+  left: 15px;
+  z-index: 10;
+  @media(max-width: 550px) {
+		top: 35px;
+    left: auto;
+    right: 15px;
+    z-index: 10;
+	}
+	li {
+		float:left;
+		padding:0px 5px;
+		a{
+			width: 24px;
+    	height: 24px;
+    	margin: 3px;
+    	display: block;
+    	border-radius:100%;
+    	-webkit-transition: all .25s linear;
+    	-o-transition: all .25s linear;
+    	transition: all .25s linear;
+		}
+		@media(min-width: 767px) {
+			&:hover{
+				a{
+			    -webkit-box-shadow: 0 0 5px 1.5px rgba(255,255,255,.4);
+			    box-shadow: 0 0 5px 1.5px rgba(255,255,255,.4);
+					img{
+				    webkit-transform: rotate(25deg);
+	    			-ms-transform: rotate(25deg);
+	    			transform: rotate(25deg);
+					}
+				}
+				
+			}
+		}
+		@media(max-width: 550px) {
+			float:none;
+			padding:5px 0px;
+		}
+		img{
+			width:24px;
+			-webkit-transition: all .25s linear;
+    	-o-transition: all .25s linear;
+    	transition: all .25s linear;
+		}
+	}
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+	img {
+		width: 155px;
+	}
+}
+.phone {
+	position: absolute;
+  top: 80px;
+  right: 15px;
+  z-index: 10;
+	a {
+		font-size: 18px;
+		font-weight: 400;
+	}
+	@media(max-width: 550px) {
+		top: 0px;
+    right: auto;
+    left: 15px;
+    z-index: 10;
+	}
+}
+

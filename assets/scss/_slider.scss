@@ -1,0 +1,37 @@
+#fp-nav{
+	@media(max-width: 1100px) {
+		display: none!important;
+	}
+	ul{
+		li {
+			&:hover{
+				.fp-tooltip{
+					opacity: 0;
+				}
+				a{
+					span{
+						width: 13px;
+						height: 13px;
+						margin: -8px 0 0 -6px;
+						opacity:0.9;
+					}
+				}
+			}
+			margin: 15px 7px;
+			a.active {
+				span {
+					opacity: 0.9;
+				}
+			}
+			a {
+				span {
+					width: 13px;
+					height: 13px;
+					background-color: #ffffff;
+					opacity: 0.35;
+					margin: -8px 0 0 -6px;
+				}
+			}
+		}
+	}
+}
